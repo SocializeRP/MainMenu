@@ -17,6 +17,29 @@ section {
     display: none;
 }
 
+::-webkit-scrollbar {
+    width: 8.5px;
+    height: 8.5px;
+}
+
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(35,35,35);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(10,10,10);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
 #main_menu {
     background: rgb(25,25,25);
     height: 100vh;
@@ -87,7 +110,6 @@ section {
 }
 
 #server_list {
-    height: 100vh;
     width: 100%;
     justify-content: flex-start;
     flex-direction: column;
@@ -131,6 +153,10 @@ section {
     border-bottom: 1px solid rgb(30,30,30);
 }
 
+#server_list .content>div:first-child {
+    border-bottom: none;
+}
+
 #server_list .content>div:last-child {
     border-bottom: none;
 }
@@ -147,10 +173,39 @@ section {
 
 #server_list .content>div h1{
     font-size: 16px;
+    font-weight: normal;
 }
 
 #server_list .content>div h2{
     font-size: 16px;
+    font-weight: normal;
+}
+
+#server_list .content .menu {
+    cursor: auto;
+}
+
+#server_list .content .menu:hover {
+    background: rgb(20,20,20);
+}
+
+#server_list .content .menu input{
+    width: calc(100% - 25px);
+    margin: 0 25px 0 0;
+    background: rgb(25,25,25);
+    border: none;
+    padding: 12px;
+    outline: none;
+    color: #cbcbcb;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+#server_list .content .menu i{
+    padding: 7.5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
 }
 
 #soon {
@@ -185,4 +240,3 @@ section {
     cursor: pointer;
     border-radius: 5px;
 }
-
