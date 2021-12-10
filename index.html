@@ -17,7 +17,7 @@
                 <a class="blue" onclick="new_section('server_list')">Server list</a>
                 <a class="blue" onclick="new_section('soon')">Editor</a>
                 <a class="blue" onclick="new_section('soon')">Settings</a>
-                <a class="red">Leave</a>
+                <a class="red" onclick="ue4('quit','')">Leave</a>
             </div>
         </div>
     </section>
@@ -28,7 +28,11 @@
                 <a class="red" onclick="new_section('main_menu')">Main menu</a>
             </div>
         </div>
-        <div class="content"></div>
+        <div class="content">
+            <div class="menu">
+                <input type="text" placeholder="Search ..."><i class="material-icons blue">autorenew</i>
+            </div>
+        </div>
     </section>
     <section id="soon">
         <div>
