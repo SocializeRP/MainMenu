@@ -29,9 +29,7 @@
             </div>
         </div>
         <div class="content">
-            <div class="menu">
-                <input type="text" placeholder="Search ..."><i class="material-icons blue">autorenew</i>
-            </div>
+            <div class="menu"><input type="text" onkeyup="search_server()" on placeholder="Search ..."><i onclick="ue4('refresh','')" class="material-icons blue">autorenew</i></div>
         </div>
     </section>
     <section id="soon">
@@ -41,7 +39,9 @@
             <a onclick="new_section('main_menu')" class="blue">Main menu</a>
         </div>
     </section>
-    <script src="main.js"></script>
-    <script src="ue4.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/ue4.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/server.js"></script>
 </body>
 </html>

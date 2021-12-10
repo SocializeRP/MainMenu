@@ -73,7 +73,6 @@ section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 25px;
 }
 
 #main_menu>div .right img {
@@ -87,6 +86,7 @@ section {
     border-radius: 5px;
     cursor: pointer;
     font-size: 14px;
+    margin: 25px 0 0 0;
 }
 
 .blue {
@@ -168,7 +168,6 @@ section {
 #server_list .content>div>div {
     display: flex;
     align-items: center;
-    gap: 25px;
 }
 
 #server_list .content>div h1{
