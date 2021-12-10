@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <section id="main_menu">
+        <div>
+            <div class="left">
+                <img src="img/home.svg">
+            </div>
+            <div class="right">
+                <img src="img/logo.png">
+                <a class="blue" onclick="new_section('server_list')">Server list</a>
+                <a class="blue" onclick="new_section('soon')">Editor</a>
+                <a class="blue" onclick="new_section('soon')">Settings</a>
+                <a class="red">Leave</a>
+            </div>
+        </div>
+    </section>
+    <section id="server_list">
+        <div class="top">
+            <img src="img/logo.png">
+            <div>
+                <a class="red" onclick="new_section('main_menu')">Main menu</a>
+            </div>
+        </div>
+        <div class="content"></div>
+    </section>
+    <section id="soon">
+        <div>
+            <img src="img/soon.svg">
+            <h1>Coming soon :)</h1>
+            <a onclick="new_section('main_menu')" class="blue">Main menu</a>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>

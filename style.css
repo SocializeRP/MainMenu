@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&display=swap');
+
+body{
+    --svg-radius: 30;
+    --stroke_circle: 187;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    user-select: none;
+    background: rgb(20,20,20);
+}
+
+input {
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+    display: none;
+}
+
+#main_menu {
+    background: rgb(25,25,25);
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#main_menu>div {
+    width: calc(70% - 100px);
+    height: calc(70vh - 100px);
+    background: rgb(20,20,20);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    padding: 50px;
+}
+
+#main_menu>div .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main_menu>div .left img {
+    width: 100%;
+}
+
+#main_menu>div .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#main_menu>div .right img {
+    height: 100px;
+}
+
+#main_menu>div .right a {
+    display: flex;
+    padding: 20px;
+    width: 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.blue {
+    background: rgba(69,170,242,0.1);
+    color: #2d98da;
+    transition: 0.5s ease;
+}
+
+.blue:hover {
+    background: rgba(69,170,242,0.15);
+}
+
+.red {
+    background: rgba(255,63,52,0.1);
+    color: #ff3f34;
+    transition: 0.5s ease;
+}
+
+.red:hover {
+    background: rgba(255,63,52,0.15);
+}
+
+#server_list {
+    height: 100vh;
+    width: 100%;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+#server_list .top {
+    width: 90%;
+    border-bottom: 1px solid rgb(30,30,30);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%
+}
+
+#server_list .top img {
+    height: 50px;
+}
+
+#server_list .top a {
+    padding: 12.5px;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+#server_list .content {
+    color: #cccccc;
+    width: 90%;
+    padding: 50px 5%;
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+#server_list .content>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7.5px 15px;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(30,30,30);
+}
+
+#server_list .content>div:last-child {
+    border-bottom: none;
+}
+
+#server_list .content>div:hover {
+    background: rgb(22,22,22);
+}
+
+#server_list .content>div>div {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+#server_list .content>div h1{
+    font-size: 16px;
+}
+
+#server_list .content>div h2{
+    font-size: 16px;
+}
+
+#soon {
+    background: rgb(25,25,25);
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+#soon>div {
+    width: calc(70% - 100px);
+    height: calc(70vh - 100px);
+    background: rgb(20,20,20);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    color: #cccccc;
+}
+
+#soon>div img {
+    height: 30vh;
+}
+
+#soon>div a {
+    padding: 12.5px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
